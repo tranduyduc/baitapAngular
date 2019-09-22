@@ -1,0 +1,55 @@
+.head{
+    padding-top: 20px;
+    text-align: center;
+    padding-right: 248px;
+}
+hr{
+    width: 50%;
+    color: black;
+}
+.pic img{
+    padding-left:80px;
+
+}
+.img{
+    height: 400px;
+    width: 400px;
+    padding-left: 230px;
+    padding-top:35px;
+}
+.bgimg{
+    background-color: lightgrey;
+}
+.head{
+    padding-top: 20px;
+    text-align: center;
+    padding-right: 248px;
+}
+hr{
+    width: 50%;
+    color: black;
+}
+.imgc img{
+    height: 70px;
+    width: 70px;
+}
+.textcart{
+    padding-left: 20px;
+}
+.key{
+    height: 70px;
+}
+.pic img{
+    padding-left:80px;
+
+}
+.iconhand table tr td a{
+    font-size: 24px;
+    text-align: center;
+}
+.iconhand table tr td{
+    padding-right: 25px;
+}
+.iconhand{
+    padding-left: 310px;
+}

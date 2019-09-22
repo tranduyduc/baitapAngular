@@ -1,0 +1,153 @@
+<div class="container body">
+    <div class="row">
+        <div class="col-6 head">
+            <h1>Online Shopping Mall</h1>
+            <hr />
+            <br />
+            <p>the center shopping you can buy online</p>
+        </div>
+        <div class="col-5 pic">
+            <img src="../assets/images/header-object.png">
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto padding">
+                <li class="nav-item active">
+                    <a class="nav-link" [routerLink]="['']"><i class="fas fa-home"></i>Trang Chủ <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active ">
+                    <a class="nav-link"><i class="fas fa-th-list"></i>Giới Thiệu</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-phone-volume"></i>Liên Hệ</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Góp Ý</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-question-circle"></i>Hỏi Đáp</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i>Tài khoản
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">English</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Tiếng Việt</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-9">
+            <div class="container">
+                <div class="chitiet">
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="{{sanpham.img}}">
+                            <div class="media-body">
+                                <ul>
+                                    <li>Tên hàng:{{sanpham.name}}</li>
+                                    <li>Đơn giá:{{sanpham.gia}} $</li>
+                                    <li>Nhà cung cấp: {{sanpham.ng}}</li>
+                                    <li>Chủng Loại: {{sanpham.msp}}</li>
+                                    <li>{{sanpham.mota}}</li>
+                                    <li>Số lượng còn <span class="badge badge-warning">5</span> cái</li>
+                                    <li>Giảm giá <span class="badge badge-info">5%</span></li>
+                                </ul>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">số lượng:</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </form>
+                                <a [routerLink]="['/sanpham']" type="button" class="btn btn-success">mua ngay</a>
+                                <a (click)='onBack()' type="button" class="btn btn-primary">Back</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card imgc">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="./assets/images/shoppingcart.gif">
+                        <div class="media-body">
+                            <p>100 ITEMS <br />
+                                <span>$ 56.8</span><br />
+                                <a [routerLink]="['/giohang']">VIEW CART</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div><br />
+            <div class="card key">
+                <div class="card-body">
+                    <input type="tex" placeholder="Key words">
+                </div>
+            </div><br />
+            <div>
+                <ul class="list-group">
+                    <a href="#">
+                        <li class="list-group-item mau" data-toggle="collapse" href="#modongthu1" role="button"
+                            aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-list-ul"></i>Chủng
+                            loại</li>
+                    </a>
+                    <div class="collapse" id="modongthu1">
+                        <ul class="list-group">
+                            <li class="list-group-item">Điện Thoại Di Động</li>
+                            <li class="list-group-item">Máy Tính Xách Tay</li>
+                            <li class="list-group-item">Laptop</li>
+                            <li class="list-group-item">máy tính để bàn</li>
+                            <li class="list-group-item">quạt máy</li>
+                            <li class="list-group-item">máy ảnh</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <ul class="list-group">
+                    <a href="#">
+                        <li class="list-group-item mau" data-toggle="collapse" href="#modongthu2" role="button"
+                            aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-list-ul"></i>Nhà Cung
+                            Cấp</li>
+                    </a>
+                    <div class="collapse" id="modongthu2">
+                        <ul class="list-group">
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

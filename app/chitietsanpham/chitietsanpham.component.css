@@ -1,0 +1,29 @@
+.head{
+    padding-top: 20px;
+    text-align: center;
+    padding-right: 248px;
+}
+hr{
+    width: 50%;
+    color: black;
+}
+.pic img{
+    padding-left:80px;
+
+}
+.body{
+    height: 500px;
+}
+.imgc img{
+    height: 70px;
+    width: 70px;
+}
+.textcart{
+    padding-left: 20px;
+}
+.chitiet{
+    font-size: 24px;
+}
+.chitiet a{
+    float: right;
+}
