@@ -1,0 +1,26 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">ho ten</label>
+            <input type="text" [(ngModel)]="employee.name" [ngModelOptions]="{standalone:true}" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">luong</label>
+            <input type="number" [(ngModel)]="employee.salary" [ngModelOptions]="{standalone:true}"
+                class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">gioi tinh</label>
+            <input type="radio" value="nam" [(ngModel)]="employee.gender" [ngModelOptions]="{standalone:true}">nam
+            <input type="radio" value="nu" [(ngModel)]="employee.gender" [ngModelOptions]="{standalone:true}">nu
+            
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">tuoi</label>
+            <input type="number" [(ngModel)]="in4.mark" [ngModelOptions]="{standalone:true}" class="form-control">
+        </div>
+        <div [(ngModel)]="in4.TB" [ngModelOptions]="{standalone:true}" class="alert alert-danger" role="alert">
+            {{tinh()}}
+        </div>
+    </form>
+</div>
