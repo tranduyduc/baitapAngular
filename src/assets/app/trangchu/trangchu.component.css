@@ -1,0 +1,42 @@
+.pic img{
+    float: left;
+    width: 1110px;
+    padding: 0px;
+
+}
+.taikhoan a{
+    color: black;
+}
+ul li a{
+    color: black;
+}
+.bodyrow{
+    padding-top: 20px;
+}
+.card1{
+    background-color: cyan;
+    float: left;
+    margin: 0px 20px 20px 70px ;
+}
+.card1 p{
+    font-weight: bold;
+    text-align: center;
+}
+.card1 a{
+    color: black;
+}
+.hand{
+    float: left;
+    padding-left: 38%;
+    margin-top: 20px;
+}
+.hand button{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.dmmh{
+    padding-top: 20px;
+}
